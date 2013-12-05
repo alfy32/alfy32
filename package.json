@@ -1,0 +1,12 @@
+{
+  "name": "alfy32",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server/app.js"
+  },
+  "dependencies": {
+    "express": "*",
+    "config": "*"
+  }
+}
