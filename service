@@ -1,0 +1,12 @@
+description "www.alfy32.com"
+author    "Alan Christensen"
+
+start on filesystem and started network
+stop on stopping network
+stop on starting shutdown
+respawn
+
+#env NODE_ENV=production
+chdir /home/ubuntu/alfy32.com/www
+exec npm start >> /var/log/www.log 2>&1
+
