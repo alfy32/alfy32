@@ -1,25 +1,26 @@
 
-body {
-  margin: 0px;
-  background-color: #18736E;
-  font-family: 'Chivo', sans-serif;
-}
-
 header {
-  background-color: #02141A;
+  background-color: black;
   padding: 20px;
   text-align: right;
-  color: #18736E;
-  font-family: 'Chivo', sans-serif;
+  color: #d3d7cf;
   text-transform: uppercase;
+  font-family: 'Chivo', sans-serif;
 }
-
-header h1 {
+header a {
+  text-decoration: none; 
+  color: inherit;
+}
+header a:hover {
+  text-decoration: none; 
+  color: #555753;
+}
+header h1, header h3 {
   margin: 0px;
 }
 
-div.navbar {
-  background-color: #272727;
+div.nav-bar {
+  background-color: #2e3436;
   height: 20px;
 }
 
@@ -40,32 +41,25 @@ div.navbar {
 }
 
 .nav-list li:hover {
-  background-color: #4D4C4C;
+  text-decoration: none;
+  background-color: #2e3436;
+  color: inherit;
+}
+
+.nav-list li.active {
+  text-decoration: none;
+  background-color: black;
+  color: inherit;
 }
 
 .nav-list a {
   text-decoration: none;
   font-family: 'Chivo', sans-serif;
+  font-size: 15px;
   color: white;
 }
 
-.body {
-  max-width: 1080px;
-  width: 80%;
-  margin: auto;
-  text-align: center;
-}
-
-.buttons {
-  display: block;
+.nav-list a:hover {
   text-decoration: none;
-  background-color: #004E35;
-  border-radius: 10px;
-  margin: 5px 0px;
   color: white;
-  padding: 10px;
-}
-
-.buttons:hover {
-  background-color: #19452C;
 }

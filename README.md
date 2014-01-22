@@ -1,4 +1,4 @@
-alfy32
-======
+alfy32.com
+===
 
-My own site. alfy32.com
+This is my site to showcase what I do in web developement.

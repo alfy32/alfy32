@@ -1,0 +1,47 @@
+<header>
+  <a href="#">
+    <h1>Alan Christensen</h1>
+    <h3>{Software Developer}</h3>
+  </a>
+</header>
+
+<div class="nav-bar">
+  <ul class="nav-list">
+    <li ng-repeat="item in nav | filter:security"
+        ng-class="{active: item.state==state.current.name}">
+      <a href="#{{item.url}}">{{item.name}}</a>
+    </li>
+  </ul>
+</div>
+
+<!-- 
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  Brand and toggle get grouped for better mobile display
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Diet App</a>
+  </div>
+
+  Collect the nav links, forms, and other content for toggling
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li ng-repeat="item in nav | filter:security" 
+          ng-class="{active:item.state==state.current.name}">
+        <a href="#{{item.url}}">{{item.name}}</a>
+      </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li ng-class="{active:state.current.name=='login'}">
+        <a ng-click="logInOut(lMsg)">{{lMsg}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="height:50px"></div> -->

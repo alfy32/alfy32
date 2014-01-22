@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Alan Christensen</title>
+<html>
+  <head>
+    <title>Alan Christensen</title>
+    <!-- ref:css css/<%= appName %>.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/projects.css">
 
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- Libraries -->
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
 
-  <!-- fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Chivo">
+    <!-- endref -->
+  </head>
+  <body check-user>
 
-</head>
-<body>
-  <header>
-    <h1>Alan Christensen</h1>
-    <h1>{Web Developer}</h1> 
-  </header>
-  <div class="navbar">
-    <ul class="nav-list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </div>
+    <div header id="header"></div>
+    <div ui-view id="view"></div>
+    <div footer id="footer"></div>
 
-  <div class="body">
+    <!-- ref:js js/<%= appName %>.min.js -->
+    <!-- Libraries -->
+    <script src="js/lib/d3.js"></script>
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/moment.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/ui-bootstrap.js"></script>
+    <script src="js/lib/ui-router.js"></script>
 
-    <h2>I'm in the process of making this site</h2>
+    <!-- Module -->
+    <script src="js/module.js"></script>
 
-    <h2>Here are some projects I have.</h2>
+    <!-- Controllers -->
+    <script src="js/app/controller/header.js"></script>
+    <script src="js/app/controller/footer.js"></script>
+    <script src="js/app/controller/login.js"></script>
+    <script src="js/app/controller/main.js"></script>
+    <script src="js/app/controller/projects.js"></script>
+    <script src="js/app/controller/protected.js"></script>
 
-    <a class="buttons" href="http://accent.alfy32.com">Accent</a>
-    <a class="buttons" href="http://aldoku.alfy32.com">Aldoku</a>
-    <a class="buttons" href="http://chat.alfy32.com">Chat</a>
-    <a class="buttons" href="http://farkle.alfy32.com">Farkle</a>
-    <a class="buttons" href="http://wccr.alfy32.com">WCCR</a>
-    
-  </div>
-</body>
+    <!-- Directives -->
+    <script src="js/app/directive/header.js"></script>
+    <script src="js/app/directive/footer.js"></script>
+    <script src="js/app/directive/check-user.js"></script>
+
+    <!-- Services -->
+    <script src="js/app/service/nav.js"></script>
+    <script src="js/app/service/alerts.js"></script>
+    <script src="js/app/service/user.js"></script>
+
+    <!-- Filters -->
+
+    <!-- Main -->
+    <script src="js/main.js"></script>
+    <!-- endref -->
+
+  </body>
 </html>

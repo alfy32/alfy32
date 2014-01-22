@@ -1,0 +1,28 @@
+.projects {
+  background-color: #d3d7cf;
+  height: 100%;
+  padding: 10px;
+}
+
+.projects-center {
+  max-width: 1080px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.projects-buttons {
+  display: block;
+  text-decoration: none;
+  background-color: #2e3436;
+  border-radius: 10px;
+  margin: 5px 0px;
+  color: white;
+  padding: 10px;
+}
+
+.projects-buttons:hover {
+  background-color: #555753;
+  text-decoration: none;
+  color: black;
+}

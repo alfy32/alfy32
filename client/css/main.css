@@ -1,0 +1,46 @@
+
+#main {
+  /*height: 100%;*/
+  padding: 10px;
+}
+
+.main-my-pic {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.intro {
+  padding: 20px;
+  background-color: #d3d7cf;
+}
+
+.intro h1 {
+  margin: 4px;
+}
+
+.intro p {
+  width: 900px;
+}
+
+.skills {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #babdb6;
+}
+
+.skills h4 {
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.column-holder {
+  width: 900px;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  width: 280px;
+  padding: 10px;
+}
