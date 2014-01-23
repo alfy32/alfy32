@@ -1,6 +1,6 @@
 /* jshint node:true */
 module.exports = {
-  port: 3000,
+  port: 3002,
   couch: {
     host: 'localhost',
     port: 5984,
